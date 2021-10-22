@@ -1,0 +1,45 @@
+.man-image{
+    height:100%;
+    width: 100%;
+    margin-right:0;
+}
+
+.nav-style{
+    margin-top:"50px";
+    z-index: 100;
+}
+
+.footer-container{
+    margin-top: "100px";
+    background-color: black;
+    color: white;
+}
+
+.orders-footer{
+    font-size:17px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.divider {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 2px solid rgb(255, 255, 255);
+  }
+
+.list-links{
+    
+    text-decoration: none;
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 17px;
+}  
+
+.list-links a{
+    padding-left:0;
+    margin-left:0;
+    color: white;
+    text-align: left;
+}
+
