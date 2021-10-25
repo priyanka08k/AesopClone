@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Container, Row, Col } from "react-bootstrap";
 import {setProducts} from "../redux/actions/productAction";
 import ProductComponent from "./ProductComponent";
 import allproducts from "../products";
@@ -13,13 +12,15 @@ const ProductListing = () => {
     }
     useEffect(() => {
         fetchProducts();
-    }, []);
+    });
     console.log("Products:", products);
     return(
-
-        <Container fluid style={{margin: "100px"}}>
-           <ProductComponent />
-        </Container>
+        <div className="container-fuild" style={{margin: '50px', marginTop: '120px', display: 'flex', flexDirection:'row'}}>
+            <ProductComponent />
+        </div>
+        
+           
+        
     );
 };
 

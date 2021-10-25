@@ -5,14 +5,18 @@ import Middle from "./containers/Middle";
 import Footer from "./containers/Footer";
 import ProductListing from './containers/ProductListing';
 import ProductDetail from './containers/ProductDetail';
-import ProductComponent from './containers/ProductComponent';
+import MainNav from './containers/MainNav';
+import Third from './containers/Third';
 
 function App() {
   return (
     <div className="App">
       <Router>
+        <MainNav />
         <Header />
+        <Third />
         <Middle />
+       
         <Switch>
         <Route path="/" exact component={ProductListing} />
         <Route path="/product/:productID" exact component={ProductDetail} />

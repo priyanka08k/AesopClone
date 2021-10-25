@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import {Card, Row, Col} from "react-bootstrap";
+import {Card} from "react-bootstrap";
 
 
 const ProductComponent = () => {
@@ -8,21 +8,22 @@ const ProductComponent = () => {
     const renderList = products.map((product) => {
         const {id, title, photo, description} = product;
         return (
-            <Row key={id}>
-            <Col sm={4}>
-            <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src={photo} />
+        <span key={id} style={{padding:"10px", margin:"10px", width:"500px"}}>
+            
+            <Card className="products">
+            <Card.Img variant="top" src={photo} style={{width:"300px", height:"300px"}}/>
             <Card.Body>
-            <Card.Title>{title}</Card.Title>
+            <Card.Title>
+            <a className="a-links" href="#title">{title}</a>
+            </Card.Title>
             <Card.Text>
                 {description}
             </Card.Text>
             
             </Card.Body>
             </Card>
-            </Col>
            
-        </Row>
+        </span>
         );
     });
     return (

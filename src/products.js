@@ -2,7 +2,7 @@ const allproducts = [
     {
         id: 1,
         title:"Herbal Deodrant",
-        description: "Developer",
+        description: "Aluminium-free, herbacious aroma",
         photo: "img/herbal.jpg"
     },
     {

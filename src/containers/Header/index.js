@@ -17,7 +17,7 @@ const Header = () => {
       <Nav.Link href="#stores">Stores</Nav.Link>
       <Nav.Link href="#search">Search</Nav.Link>
     </Nav>
-    <Nav>
+    <Nav className="ml-auto">
       <Nav.Link href="#login" className="me-2">Login</Nav.Link>
       <Nav.Link eventKey={2} href="#cart" className="me-2">
         Cart

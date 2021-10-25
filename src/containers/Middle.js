@@ -5,7 +5,7 @@ import { Container, Row, Col, Image, Button } from "react-bootstrap";
 
 const Middle = () => {
     return(
-      <Container style={{ marginLeft: "0", font:"Roboto", padding:"0", marginRight: "0", maxWidth: "100vw"}}>
+      <Container className="fademe" style={{ marginLeft: "0", font:"Roboto", padding:"0", marginRight: "0", maxWidth: "100vw"}}>
           <Row>
               <Col xs lg="2">
                   <h1 style={{ marginTop: "100px", marginLeft: "0px", marginRight:"0" }}>Aesop</h1>
